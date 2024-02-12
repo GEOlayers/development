@@ -1,5 +1,7 @@
 var myAutobahn = prompt('Bitte Autobahnnummer eingeben A', "");
 var myCountry = prompt('Bitte Land eingeben in dem nach der Autobahn ' + 'A' + myAutobahn + ' gesucht werden soll?', "Germany");
+myCountry = "\'" + myCountry + "\'";
+alert(myCountry);
 //alert('A ' + myAutobahn)
 
 geolayers3.addToBrowser({
