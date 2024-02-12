@@ -4,6 +4,7 @@ myCountry = "\'" + myCountry + "\'";
 myAutobahn = "\"A " + myAutobahn + "\"";
 alert("so sieht das jetzt aus: " + myCountry);
 alert("so sieht das jetzt aus: " + myAutobahn);
+alert("so sieht der String jetzt aus: " + '[out:json][timeout:60];{{geocodeArea:' + myCountry + '}}->.searchArea;(nwr["highway"="motorway"][ref=' + myAutobahn + '](area.searchArea););out body;>;out skel qt;');
 
 geolayers3.addToBrowser({
     type:"overpass",
