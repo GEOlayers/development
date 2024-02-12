@@ -2,7 +2,7 @@ var myAutobahn = prompt('Bitte Autobahnnummer eingeben A', "");
 var myCountry = prompt('Bitte Land eingeben in dem nach der Autobahn ' + 'A' + myAutobahn + ' gesucht werden soll?', "Germany");
 myCountry = "\'" + myCountry + "\'";
 alert("so sieht das jetzt aus: " + myCountry);
-//alert('A ' + myAutobahn)
+alert('A ' + myAutobahn)
 
 geolayers3.addToBrowser({
     type:"overpass",
