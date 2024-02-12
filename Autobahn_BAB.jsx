@@ -1,6 +1,6 @@
 var myAutobahn = prompt('Bitte Autobahnnummer eingeben A', "");
 var myCountry = prompt('Bitte Land eingeben in dem nach der Autobahn ' + 'A' + myAutobahn + ' gesucht werden soll?', "Germany");
-myCountry = "\'" + myCountry + "\'";
+//myCountry = "\'" + myCountry + "\'";
 myAutobahn = "\"A " + myAutobahn + "\"";
 alert("so sieht das jetzt aus: " + myCountry);
 alert("so sieht das jetzt aus: " + myAutobahn);
