@@ -9,5 +9,5 @@ alert("so sieht der String jetzt aus: " + '[out:json][timeout:60];{{geocodeArea:
 geolayers3.addToBrowser({
     type:"overpass",
     // query:'[out:json][timeout:25];{{geocodeArea:' + myCountry + '}}->.searchArea;(node["highway"="motorway"][ref="A ' + myAutobahn + '"](area.searchArea);way["highway"="motorway"][ref="A ' + myAutobahn + '"](area.searchArea);relation["highway"="motorway"][ref="A ' + myAutobahn + '"](area.searchArea););out body;>;out skel qt;'
-    query:'[out:json][timeout:60];{{geocodeArea:' + myCountry + '}}->.searchArea;(nwr["highway"="motorway"][ref=' + myAutobahn + '](area.searchArea););out body;>;out skel qt;'
+    query:'[out:json][timeout:60];area(id:3600051477)->.searchArea;->.searchArea;(nwr["highway"="motorway"][ref=' + myAutobahn + '](area.searchArea););out body;>;out skel qt;'
 })
